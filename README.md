@@ -37,3 +37,11 @@ constant factors.
 Describe your reasoning and the conclusion you've come to. Your reasoning is
 most important -- you can easily find the answer, but you need to demonstrate
 that you've understood the concept. Add your answer to this markdown file.
+
+Each time the code iterates throught the array, it steps the number of comparisons up
+by one
+so 1+2+3+4...+(n-1) where n is the length of the provided array
+Given this, we can convert this into an arithmetic series, such that ((n-1)/2)*(n-1+1)
+which reduces to ((n-1)/2)*(n) or (n-1)*(n) when discarding constants 
+resulting in n^2 - n
+Looking at the largest possible outcome we can assume $\Theta(n^2)$
