@@ -42,6 +42,6 @@ Each time the code iterates throught the array, it steps the number of compariso
 by one
 so 1+2+3+4...+(n-1) where n is the length of the provided array
 Given this, we can convert this into an arithmetic series, such that ((n-1)/2)*(n-1+1)
-which reduces to ((n-1)/2)*(n) or (n-1)*(n) when discarding constants 
+which reduces to ((n-1)/2)x(n) or (n-1)x(n) when discarding constants 
 resulting in n^2 - n
 Looking at the largest possible outcome we can assume $\Theta(n^2)$
